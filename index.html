@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UniBook — студентський сервіс для обміну підручниками в ХНУРЕ.">
+    <meta name="author" content="Студент спеціальності F2">
+    <title>UniBook — Головна</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home-page">
+    <header>
+        <div class="header-content">
+            <h1>UniBook</h1>
+            <p>Твій шлях до знань через обмін книгами</p>
+        </div>
+        <nav id="main-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="#">Категорії ▼</a>
+                    <ul class="submenu">
+                        <li><a href="#">Програмування</a></li>
+                        <li><a href="#">Математика</a></li>
+                    </ul>
+                </li>
+                <li><a href="add-book.html">Додати книгу</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Про проект</h2>
+            <article>
+                <p><strong>UniBook</strong> — це платформа для студентів <u>ХНУРЕ</u>, яка дозволяє легко передавати підручники з рук в руки.</p>
+                <img src="img/logo.png" alt="Логотип проекту" id="main-logo" width="150">
+            </article>
+        </section>
+        <section id="it-books">
+            <h3>Інженерія програмного забезпечення</h3>
+            <ol>
+                <li>C# розробка
+                    <ul>
+                        <li>Основи ООП</li>
+                    </ul>
+                </li>
+                <li>Веб-технології (HTML/CSS)</li>
+            </ol>
+        </section>
+        <section id="stats">
+            <h3>Статистика обміну</h3>
+            <table id="exchange-table">
+                <tr>
+                    <th>Предмет</th>
+                    <th>В наявності</th>
+                    <th>Запитів</th>
+                </tr>
+                <tr>
+                    <td>Дискретна математика</td>
+                    <td>12</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Програмування на C#</td>
+                    <td>8</td>
+                    <td>30</td>
+                </tr>
+            </table>
+        </section>
+        <section id="wiki-frame">
+            <h2>Довідка: Що таке Software Engineering?</h2>
+            <iframe 
+                src="https://uk.m.wikipedia.org/wiki/Інженерія_програмного_забезпечення" 
+                width="100%" 
+                height="400" 
+                style="border: 2px solid #2980b9; border-radius: 8px;">
+            </iframe>
+        </section>
+        <section>
+            <div>
+                <h2>Останні новини</h2>
+                <video controls width="100%">
+                    <source src="video/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <aside id="sidebar">
+        <h4>Корисне</h4>
+        <p>Не забудьте прослухати аудіо-інструкцію перед початком.</p>
+        <audio src="audio/welcome.mp3" controls></audio>
+    </aside>
+
+    <footer id="main-footer">
+        <p>&copy; 2026 UniBook — Розроблено в ХНУРЕ</p>
+    </footer>
+
+</body>
+</html>

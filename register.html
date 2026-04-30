@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UniBook — студентський сервіс для обміну підручниками в ХНУРЕ.">
+    <meta name="author" content="Студент спеціальності F2">
+    <title>UniBook — Реєстрація</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Реєстрація у UniBook</h1>
+        <nav id="main-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Головна</a></li>
+                <li class="dropdown">
+                    <a href="#">Категорії ▼</a>
+                    <ul class="submenu">
+                        <li><a href="#">Програмування</a></li>
+                        <li><a href="#">Математика</a></li>
+                    </ul>
+                </li>
+                <li><a href="add-book.html">Додати книгу</a></li>
+                <li><a href="register.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card registration-card">
+        <h2>Створити акаунт студента</h2>
+        <form action="#" method="POST" class="styled-form">
+            
+            <div class="form-group">
+                <label for="reg-email">Електронна пошта (NURE):</label>
+                <input type="email" id="reg-email" name="email" required placeholder="your.name@nure.ua">
+            </div>
+
+            <div class="form-group">
+                <label for="reg-tel">Контактний номер:</label>
+                <input type="tel" id="reg-tel" name="phone" pattern="^\+380\d{9}$" placeholder="+380XXXXXXXXX" required>
+                <small>Формат: +380 і 9 цифр</small>
+            </div>
+
+            <div class="form-group">
+                <label for="reg-url">Посилання на GitHub/LinkedIn:</label>
+                <input type="url" id="reg-url" name="portfolio" placeholder="https://github.com/username">
+            </div>
+
+            <div class="form-group">
+                <label for="reg-name">Ім'я та Прізвище:</label>
+                <input type="text" id="reg-name" name="fullname" minlength="3" maxlength="50" required placeholder="Іван Іванов">
+            </div>
+
+            <button type="submit" class="submit-btn">Зареєструватися</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 UniBook — Розроблено в ХНУРЕ</p>
+    </div>
+</footer>
+
+</body>
+</html>

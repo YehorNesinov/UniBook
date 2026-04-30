@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UniBook — студентський сервіс для обміну підручниками в ХНУРЕ.">
+    <meta name="author" content="Студент спеціальності F2">
+    <title>UniBook — Додати книгу</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Додати книгу в UniBook</h1>
+    <nav id="main-nav">
+        <ul class="nav-menu">
+            <li><a href="index.html">Головна</a></li>
+            <li class="dropdown">
+                <a href="#">Категорії ▼</a>
+                <ul class="submenu">
+                    <li><a href="#">Програмування</a></li>
+                    <li><a href="#">Математика</a></li>
+                </ul>
+            </li>
+            <li><a href="add-book.html">Додати книгу</a></li>
+            <li><a href="register.html">Реєстрація</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>Заповніть дані про книгу</h2>
+        <form action="#" method="POST" class="book-form">
+            
+            <div class="form-group">
+                <label for="user-email">Ваш Email (для зв'язку):</label>
+                <input type="email" id="user-email" name="email" required placeholder="example@nure.ua">
+            </div>
+
+            <div class="form-group">
+                <label for="user-phone">Номер телефону:</label>
+                <input type="tel" id="user-phone" name="phone" 
+                       pattern="^\+380\d{9}$" 
+                       placeholder="+380XXXXXXXXX" 
+                       required>
+                <small>Формат: +380 та 9 цифр</small>
+            </div>
+
+            <div class="form-group">
+                <label for="book-url">Посилання на опис (Wiki або магазин):</label>
+                <input type="url" id="book-url" name="url" placeholder="https://example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="available-time">Коли книга буде доступна для зустрічі:</label>
+                <input type="datetime-local" id="available-time" name="meeting_time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="book-title">Назва книги:</label>
+                <input type="text" id="book-title" name="title" minlength="3" maxlength="100" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Опублікувати пропозицію</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 UniBook — Розроблено в ХНУРЕ</p>
+</footer>
+
+</body>
+</html>
